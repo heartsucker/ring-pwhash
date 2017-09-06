@@ -178,7 +178,7 @@ fn copy_memory(src: &[u8], dst: &mut [u8]) {
 /**
  * The Scrypt parameter values.
  */
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug, PartialEq)]
 pub struct ScryptParams {
     log_n: u8,
     r: u32,
